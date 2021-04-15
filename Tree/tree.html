@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="tree.css">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <nav>
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">All</a>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="name">
+            <span id="Name">Topic Name Tree</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="left-side">
+            <h2 class="left-h2">Tree</h2>
+            <ul>
+                <li id="sl1"> <a href="#">Tree Basic</a> </li>
+                <li id="sl2"><a href="#">Tree</a></li>
+                <li id="sl3"><a href="#">Tree</a></li>
+                <li id="sl4"><a href="#">Tree</a></li>
+
+            </ul>
+        </div>
+        <div class="containerMain">
+            <span id="demo" class="pdf mid">Welcome To Mehedi</span>
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("sl1").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="treePDF/TreeBasic.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Basic Tree Discussion";
+
+        });
+        document.getElementById("sl2").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="treePDF/1.pdf" /> ';
+            document.getElementById("Name").innerHTML = "B";
+
+        });
+        document.getElementById("sl3").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="treePDF/1.pdf" /> ';
+            document.getElementById("Name").innerHTML = "C";
+        });
+        document.getElementById("sl4").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="treePDF/1.pdf" /> ';
+            document.getElementById("Name").innerHTML = "D";
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>

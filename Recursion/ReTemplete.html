@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="recursion.css">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <nav>
+               
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">All</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <div class="name">
+            <span id ="Name">Topic Name</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="left-side">
+            <h2 class = "left-h2">Recursion</h2>
+            <ul>
+                <li id = "sl1" > <a href="#">Basic</a> </li>
+                <li id = "sl2" ><a href="#">Variable Add</a></li>
+                <li id = "sl3" ><a href="#">Static variable</a></li>
+                <li id = "sl4" ><a href="#">Tree Recursion</a></li>
+                <li id = "sl5" ><a href="#">Indriect Recursion</a></li>
+            </ul>
+        </div>
+        <div class="containerMain">
+            <span  id = "demo" class = "pdf mid">Welcome To Mehedi</span>
+           
+        </div>
+    </div>
+    <script>
+        document.getElementById("sl1").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/Basic.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Head and Tail Recursion";
+
+        });
+        document.getElementById("sl2").addEventListener("click", ()=>{
+
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/VariableAdd.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Single Variable Add in Returning Time";
+
+        });
+        document.getElementById("sl3").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/staticVariable.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Static variable like a global vairable inside a function";
+        });
+        document.getElementById("sl4").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/TreeRecursion.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Tree Recursion and Linear Recursion GP call";
+        });
+        document.getElementById("sl5").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/Indriect.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Indriect Recursion work like circular fashion";
+        });
+       
+        </script>
+        
+
+</body>
+
+</html>
