@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="linux.css">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <nav>
+               
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">All</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <div class="name">
+            <span id ="Name">Topic Name</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="left-side">
+            <h2 class = "left-h2">Linux</h2>
+            <ul>
+                <li id = "sl1" > <a href="#">ls cmd</a> </li>
+                <li id = "sl2" ><a href="#"> Linux</a></li>
+                <li id = "sl3" ><a href="#">Linux</a></li>
+                <li id = "sl4" ><a href="#">Linux</a></li>
+                <li id = "sl5" ><a href="#">Linux</a></li>
+                <li id = "sl6" ><a href="#">Linux</a></li>
+                <li id = "sl7" ><a href="#">Linux</a></li>
+                <li id = "sl8" ><a href="#">Linux</a></li>
+                <li id = "sl9" ><a href="#">Linux</a></li>
+                <li id = "sl10" ><a href="#">Linux</a></li>
+                <li id = "sl11" ><a href="#">Linux</a></li>
+            </ul>
+        </div>
+        <div class="containerMain">
+            <span  id = "demo" class = "pdf mid"> sudo code --user-data-dir="~/.vscode-root" </span>
+           
+        </div>
+    </div>
+    <script>
+        document.getElementById("sl1").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="/linux/linuxPdf/ls_cmd.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "ls linux command ";
+
+        });
+        
+
+        </script>
+        
+
+</body>
+
+</html>

@@ -190,5 +190,8 @@
     width: 100%;
     height: 90vh
 }
-
+.pdf > img{
+    width: 100%;
+    height: 90vh;
+}
 /********** Common CSS Property  END *********************/

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataBase</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="database.css">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <nav>
+               
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">All</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <div class="name">
+            <span id ="Name">Topic Name</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="left-side">
+            <h2 class = "left-h2">DataBase SQL</h2>
+            <ul>
+                <li id = "sl1" > <a href="#">Basic</a> </li>
+                <li id = "sl2" ><a href="#">Data type </a></li>
+                <li id = "sl3" ><a href="#">Create Table</a></li>
+                <li id = "sl4" ><a href="#">Insert into Table</a></li>
+                <li id = "sl5" ><a href="#">Update and Delete</a></li>
+                <li id = "sl6" ><a href="#">Basic Query </a></li>
+                <li id = "sl7" ><a href="#">company data table </a></li>
+                <li id = "sl8" ><a href="#">Create company tableS </a></li>
+            </ul>
+        </div>
+        <div class="containerMain">
+            <span  id = "demo" class = "pdf mid">Welcome To DataBase</span>
+           
+        </div>
+    </div>
+    <script>
+        document.getElementById("sl1").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <img src="DBpdf/db.png" > ' ;
+            document.getElementById("Name").innerHTML = "DataBase Basic info";
+
+        });
+        document.getElementById("sl2").addEventListener("click", ()=>{
+
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="DBpdf/Data_type.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Data Type of SQL";
+
+        });
+        document.getElementById("sl3").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="DBpdf/create_table.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Create Table and DataBase";
+        });
+        document.getElementById("sl4").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="DBpdf/insert.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Insert into Table";
+        });
+        document.getElementById("sl5").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="DBpdf/update.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Update and Delete";
+        });
+        document.getElementById("sl6").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="DBpdf/query.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Basic Query";
+        });
+        document.getElementById("sl7").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <img src="DBpdf/company.png" > ';
+            document.getElementById("Name").innerHTML = "Company dataBase table";
+        });
+        document.getElementById("sl8").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="DBpdf/create_company.pdf" /> ';
+            document.getElementById("Name").innerHTML = "create company dataBase table";
+        });
+       
+        </script>
+        
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScprit</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="js.css">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <nav>
+               
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">All</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <div class="name">
+            <span id ="Name">Topic Name</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="left-side">
+            <h2 class = "left-h2">javaScprit</h2>
+            <ul>
+                <li><a href="/Web/javaScprit/demo.html">Pratice Demo</a></li>
+                <li id = "sl1" > <a href="#">First js</a> </li>
+                <li id = "sl2" ><a href="#">input & output</a></li>
+                <li id = "sl3" ><a href="#">variable</a></li>
+                <li id = "sl4" ><a href="#">Scoping variable</a></li>
+                <li id = "sl5" ><a href="#">Data Type</a></li>
+                <li id = "sl6" ><a href="#">Number and String</a></li>
+                <li id = "sl7" ><a href="#">Function and Object</a></li>
+                <li id = "sl8" ><a href="#">if else</a></li>
+                <li id = "sl9" ><a href="#">Loop</a></li>
+                <li id = "sl10" ><a href="#">Pattern print</a></li>
+                <li id = "sl11" ><a href="#">Array</a></li>
+                <li id = "sl12" ><a href="#">Date Method</a></li>
+                <li id = "sl13" ><a href="#">Function</a></li>
+                <li id = "sl14" ><a href="#">Memoization use Object</a></li>
+                <li id = "sl15" ><a href="#">Default Function</a></li>
+                <li id = "sl16" ><a href="#">this keyword</a></li>
+                <li id = "sl17" ><a href="#">this value change</a></li>
+                <li id = "sl18" ><a href="#">Arrow Function</a></li>
+                <li id = "sl19" ><a href="#">Debuging</a></li>
+                <li id = "sl20" ><a href="#">Error Handeling</a></li>
+                <li id = "sl21" ><a href="#">Constractor</a></li>
+            </ul>
+        </div>
+        <div class="containerMain">
+            <span  id = "demo" class = "pdf mid">Welcome To javaScprit</span>
+           
+        </div>
+    </div>
+    <script>
+        document.getElementById("sl1").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/first_dom.pdf" /> ';
+            document.getElementById("Name").innerHTML = "First Dom using js";
+
+        });
+        document.getElementById("sl2").addEventListener("click", ()=>{
+
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="jsPDF/input_output.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "input and output";
+
+        });
+        document.getElementById("sl3").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="jsPDF/variable2.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "variable";
+        });
+        document.getElementById("sl4").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="jsPDF/scoping.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Variable Scoping";
+        });
+        document.getElementById("sl5").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="jsPDF/data_type.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Data Type";
+        });
+        document.getElementById("sl6").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="jsPDF/number and string.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Number and String";
+        });
+        document.getElementById("sl7").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/function_and_object.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Function and Object";
+        });
+        document.getElementById("sl8").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/ifelse.pdf" /> ';
+            document.getElementById("Name").inn0erHTML = "if else statement";
+        });
+        document.getElementById("sl9").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/loop.pdf" /> ';
+            document.getElementById("Name").innerHTML = "All Loop";
+        });
+        document.getElementById("sl10").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/pattern.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Pattern Print in Page";
+        });
+        document.getElementById("sl11").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/Array.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Array and it's Method";
+        });
+        document.getElementById("sl12").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/Date.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Date Object Create and use";
+        });
+        document.getElementById("sl13").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/function.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Function and callBack";
+        });
+        document.getElementById("sl14").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/memoization.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Memoization apply using Object";
+        }); 
+        document.getElementById("sl15").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/Default_function.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Default Function and argument";
+        });
+        document.getElementById("sl16").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/this.pdf" /> ';
+            document.getElementById("Name").innerHTML = "This keyWord and Constractor";
+        });
+        document.getElementById("sl17").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/this_chng.pdf" /> ';
+            document.getElementById("Name").innerHTML = "this value Change";
+        });
+        document.getElementById("sl18").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/arrow.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Arrow Function";
+        });
+        document.getElementById("sl19").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/debug.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Debuging";
+        });
+        document.getElementById("sl20").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/error.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Error Handelling";
+        });
+        document.getElementById("sl21").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="jsPDF/cons.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Constractor and prototype";
+        });
+       
+       
+        </script>
+        
+
+</body>
+
+</html>

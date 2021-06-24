@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study_Graph</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/study/study.css">
+</head>
+<body>
+    <div class="nav-bar boder">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">All</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="name">
+            <p id="Name">JUN 2021</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="left-side">
+            <h2 class = "left-h2">Make it Onlie</h2>
+            <ul>
+                <li id = "sl1" > <a href="#">Graph</a> </li>
+                <li id = "sl2" > <a href="#">Vission</a> </li>
+              
+            </ul>
+        </div>
+        <div class="containerMain">
+            <span  id = "demo" class = "pdf mid"></span>
+            <div id ="hideGraph" class="graph_size" style="height: 70vh;">
+                <canvas id="lineChart" ></canvas>
+            </div>
+        </div>
+    </div>
+  
+
+   
+    
+    <script src="/study/graph.js"></script>
+    <script src="/study/study.js"></script>
+    <script>
+         document.getElementById("sl1").addEventListener("click", ()=>{
+            document.getElementById("Name").innerHTML = "JUN 2021";
+            document.getElementById("hideGraph").style.display = "block";
+            document.getElementById("demo").style.display = "none";
+
+        });
+        document.getElementById("sl2").addEventListener("click", ()=>{
+
+            document.getElementById("demo").innerHTML = `<span class="pdf">
+                <pre> 
+                    1) user Login 
+                    2) create subject with default color or select color
+                    3) max 10 subject as track
+                    4) update the subject value 
+                    5) given range of that subject as [1 - 2]
+                    6) only down and continue the value range [3, 3, 2, 2, 3]
+                    7) give all the summary result 
+                    8) Think ML we can appy or not ...
+                    9) Think many more fature we can add as much as possible 
+                    10) make a database month wise..think about it
+                    11) show the data from the Database
+                    12) make for mobile device as well
+                </pre>
+                </span>`;
+            document.getElementById("Name").innerHTML = "Vission to make it onlie";
+            document.getElementById("hideGraph").style.display="none";
+            document.getElementById("demo").style.display = "block";
+
+        });
+
+    </script>
+</body>
+</html>

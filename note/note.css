@@ -1,0 +1,10 @@
+.h2{
+    text-align: center;
+    margin: 7px 0px;
+}
+.p{
+    text-align: justify;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 0.5% 3%;
+}

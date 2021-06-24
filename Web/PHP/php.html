@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="php.css">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <nav>
+               
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">All</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <div class="name">
+            <span id ="Name">Topic Name</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="left-side">
+            <h2 class = "left-h2">PHP</h2>
+            <ul>
+                <li id = "sl1" > <a href="#">php dataBase</a> </li>
+                <li id = "sl2" ><a href="#">php</a></li>
+                <li id = "sl3" ><a href="#">php</a></li>
+                <li id = "sl4" ><a href="#">php</a></li>
+                <li id = "sl5" ><a href="#">php</a></li>
+                <li id = "sl6" ><a href="#">php</a></li>
+                <li id = "sl7" ><a href="#">php </a></li>
+                <li id = "sl8" ><a href="#">php </a></li>
+            </ul>
+        </div>
+        <div class="containerMain">
+            <span  id = "demo" class = "pdf mid">Welcome To PHP</span>
+           
+        </div>
+    </div>
+    <script>
+        document.getElementById("sl1").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="phpPDF/php_db.pdf" /> ';
+            document.getElementById("Name").innerHTML = "A";
+
+        });
+        document.getElementById("sl2").addEventListener("click", ()=>{
+
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="phpPDF/Data_type.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "B";
+
+        });
+        document.getElementById("sl3").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="phpPDF/create_table.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "C";
+        });
+        document.getElementById("sl4").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="phpPDF/insert.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "D";
+        });
+        document.getElementById("sl5").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="phpPDF/update.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "E";
+        });
+        document.getElementById("sl6").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="phpPDF/query.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "F";
+        });
+        document.getElementById("sl7").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="phpPDF/create_company.pdf" /> ';
+            document.getElementById("Name").innerHTML = "G";
+        });
+        document.getElementById("sl8").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="phpPDF/create_company.pdf" /> ';
+            document.getElementById("Name").innerHTML = "H";
+        });
+       
+        </script>
+        
+
+</body>
+
+</html>
