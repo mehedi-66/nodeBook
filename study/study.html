@@ -44,6 +44,10 @@
     <script src="graph.js"></script>
     <script src="study.js"></script>
     <script>
+        // date object create
+        let date = new Date();
+        document.getElementById("Name").innerHTML = date.toDateString();
+
          document.getElementById("sl1").addEventListener("click", ()=>{
             document.getElementById("Name").innerHTML = "JUN 2021";
             document.getElementById("hideGraph").style.display = "block";
