@@ -5,178 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Welcome</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(img/farzad-nazifi-p-xSl33Wxyc-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: 1400px 678px;
+
+    }
+
+    .full {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: -3px;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 10px 10px;
+        cursor: pointer;
+
+    }
+
+    button {
+        box-sizing: border-box;
+        color: #e4e4e4;
+        background-color: rgb(0 0 0 / 20%);
+        width: 300px;
+        padding: 10px 10px;
+        font-size: 50px;
+        outline: none;
+        font-weight: bold;
+        border: 1px solid rgb(6, 143, 1);
+        cursor: pointer;
+    }
+
+    .video1 {
+        position: fixed;
+        right: 0;
+        top: 435px;
+        border: 1px solid rgb(1, 53, 10);
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+
+
+    }
+    .video2{
+        position: fixed;
+        left: 0;
+        top: 435px;
+        border: 1px solid rgb(1, 53, 10);
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+
+
+    }
+
+    .vd {
+        padding: 0px 0px;
+        /* margin-top: 0px; */
+        width: 303px;
+        height: 230px;
+        margin-top: -30px;
+        display: inline-block;
+    }
+</style>
 
 <body>
-    <div class="nav-bar boder">
-        <nav>
-            <ul>
-                <li><a href="welcome.html">Welcome</a></li>
-                <li><a href="index.html">All</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="name">
-            <p id="demo"></p>
-        </div>
+    <div class="full">
+        <a href="main.html"> <button>Welcome Mehedi</button> </a>
     </div>
-    <div class="Wrap">
-        <div class="note left-side">
-            <h2 class = "left-h2">Note</h2>
-          <ul>
-            <li><a href="#">30 Day English challange </a> </li>
-              <li><a href="#">Tree</a> </li>
-              <li><a href="#">Graph</a> </li>
-              <li><a href="#">CP folder book</a> </li>
-              <li><a href="#">job requrement 1 year b(-_-)</a> </li>
-              <li><a href="#">git and gitHub 19v</a></li>
-              <li><a href="#">Javascript 9h</a> </li>
-              <li><a href="#">Javascript 30 day </a> </li>
-              <li><a href="#">Javascript 50 day</a> </li>
-              <li><a href="#"> React js 10h</a></li>
-              <li><a href="#">Node js 8h</a> </li>
-              <li><a href="#">Linux and shell</a></li>   
-              <li><a href="#"> Database 4h</a></li>   
-              <li><a href="#">DSA 450 problem</a></li>
-              <li><a href="#">12.Food Odering Php </a></li>
-              <li><a href="http://localhost/footOrder/" target="_blank">Me ->Project</a></li>
-          </ul>
-        </div>
-
-        <div class="container">
-            <a href="study/study.html">
-                <div class="div1 box">
-                    <img src="img/point1.png" alt="Mehedi">
-                    <h2 class="heading2">Track Study</h2>
-                    <p class="para">Check EveryDay progress</p>
-                    <button class="btn">See Full</button>
-                </div>
-            </a>
-            <a href="Recursion/ReTemplete.html">
-                <div class="div1 box">
-                    <img src="Recursion/ReImg/recursion1.png" alt="Mehedi">
-                    <h2 class="heading2">Recursion</h2>
-                    <p class="para">Function call by itself.</p>
-                    <button class="btn">See Full</button>
-                </div>
-            </a>
-            <a href="Book/bookTemplete.html">
-                <div class="div2 box">
-                    <img src="img/book.jpg" alt="Mehedi">
-                    <h2 class="heading2">Reading Book</h2>
-                    <p class="para">To make better version of yourself </p>
-                    <button class="btn">See Full</button>
-                </div>
-            </a>
-            <a href="Tree/tree.html">
-                <div class="div3 box">
-                    <img src="Tree/treePDF/treeLogo.png" alt="Mehedi">
-                    <h2 class="heading2">Tree</h2>
-                    <p class="para">Tree is usefull for Routing and Searching</p>
-                    <button class="btn">See Full</button>
-                </div>
-            </a>
-            <a href="Web/web.html">
-            <div class="div3 box">
-                <img src="Web/download.png" alt="Mehedi">
-                <h2 class="heading2">Web</h2>
-                <p class="para">Learn something and explore the web sector</p>
-                <button class="btn">See Full</button>
-            </div>
-        </a>
-        <a href="Graph/graph.html">
-            <div class="div3 box">
-                <img src="img/graph1.png" alt="Mehedi">
-                <h2 class="heading2">Graph</h2>
-                <p class="para">Learn Beauty of Graph </p>
-                <button class="btn">See Full</button>
-            </div>
-        </a>
-        <a href="problem/problem.html">
-            <div class="div3 box">
-                <img src="img/problem2.png" alt="Mehedi">
-                <h2 class="heading2">Problem</h2>
-                <p class="para">Problem Solving & Track</p>
-                <button class="btn">See Full</button>
-            </div>
-        </a>
-
-        <a href="note/note.html">
-            <div class="div3 box">
-                <img src="note/note.jpg" alt="Mehedi">
-                <h2 class="heading2">Note</h2>
-                <p class="para">Gain knowledge</p>
-                <button class="btn">See Full</button>
-            </div>
-        </a>
-        <a href="linux/linux.html">
-            <div class="div3 box">
-                <img src="linux/ln.png" alt="Mehedi">
-                <h2 class="heading2">Linux</h2>
-                <p class="para">learn some basic Linux commands</p>
-                <button class="btn">See Full</button>
-            </div>
-        </a>
-
-        <a href="project/project.html">
-            <div class="div3 box">
-                <img src="img/project1.png" alt="Mehedi">
-                <h2 class="heading2">Project</h2>
-                <p class="para">Basic project to represent mehedi</p>
-                <button class="btn">See Full</button>
-            </div>
-        </a>
-
-        <!-- <a href="English/english.html">
-            <div class="div3 box">
-                <img src="#" alt="Mehedi">
-                <h2 class="heading2">English</h2>
-                <p class="para">30 Day challange to improve english Speaking</p>
-                <button class="btn">See Full</button>
-            </div>
-        </a> -->
-
-
-        </div>
-
+    <div class="video1">
+        <video class="vd" src="img/mtv.mp4" autoplay controls> </video>
     </div>
-
-    <!-- Display the countdown timer in an element -->
-
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("sep 5, 2023 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
+    <div class="video2">
+        <video class="vd" src="img/sandip.mp4" autoplay controls> </video>
+    </div>
 </body>
 
 </html>
