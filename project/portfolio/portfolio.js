@@ -106,9 +106,10 @@ modalCloses.forEach((modalClose) =>{
 
 /*=============== PORTFOLIO SWIPER ==================*/
 let swiper = new Swiper('.portfolio_container', {
-    // cssMode: true,
+    cssMode: true,
     loop: true,
-    grabCursor: true, // mouse move left to right
+    //grabCursor: true, // mouse move left to right
+    spaceBetween: 70,
     navigation: {
         nextE1: '.swiper-button-next',
         prevE1: '.swiper-button-prev',
@@ -117,6 +118,7 @@ let swiper = new Swiper('.portfolio_container', {
         e1: '.swiper-pagination',
         clickable: true,
     },
+   
 });
 
 /*================== Testimoinal swiper ==================*/
@@ -183,3 +185,27 @@ window.addEventListener('scroll', scrollActive);
      }
  }
  window.addEventListener('scroll', scrollUp);
+
+ /*====================== DARK LIGHT THEME ========== */
+ const themeButton = document.getElementById('theme-button');
+ const darkTheme = 'dark-theme';
+ const iconTheme = 'uil-sun';
+
+ const seletedTheme = localStorage.getItem('selected-theme');
+ const seletedIcon = localStorage.getItem('selected-icon');
+
+ const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun';
+
+ if(seletedTheme){
+     document.body.classList[seletedTheme === 'dark' ? 'add': 'remove'](darkTheme)
+     themeButton.classList[seletedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+ }
+
+ themeButton.addEventListener('click', () =>{
+     document.body.classList.toggle(darkTheme)
+     themeButton.classList.toggle(iconTheme)
+
+     localStorage.setItem('selected-theme', getCurrentTheme())
+     localStorage.setItem('selected-icon', getCurrentIcon())
+ });
