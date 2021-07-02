@@ -43,6 +43,8 @@
     color: #eaeaea;
 
 }
+
+
 /* container part */
 .Wrap{
     /* display:flex; */
@@ -57,6 +59,7 @@
     width: 205px;
     overflow: scroll;
     float: left;
+    transition: 0.3s ease-in-out;
 }
 .container{
     width: 84%;
@@ -64,7 +67,11 @@
     /* height: 90vh; */
     overflow: scroll;
     padding: 10px;
-
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-wrap:  wrap;
+    align-items:space-between;
+    justify-content: space-around;
 }
 .box{
     float: left;
@@ -194,4 +201,36 @@
     width: 100%;
     height: 90vh;
 }
-/********** Common CSS Property  END *********************/
+/********** Common CSS Property  END *********************//* Start work button Toggle */
+#toggleBtn{
+    background-color: rgb(219, 219, 219);
+    border: 1px solid black;
+    font-size: 20px;
+    padding: .2rem;
+    position: fixed;
+    top: 60px;
+    left: 206px;
+    color: green;
+    transition: 0.3s ease-in-out;
+}
+#toggleBtn.active{
+    transform: translateX(-195px);
+}
+#toggleSide.active{
+    /* transform: translateX(-100%); */
+    display: none;
+}
+#mainId.active{
+    width: 100%;
+    /* margin: 0px auto; */
+    /* height: 90vh; */
+    /* overflow: scroll;
+    padding: 10px; */
+    display: flex;
+    flex-wrap:  wrap;
+    align-items:space-between;
+    justify-content: space-around;
+    
+}
+
+/* End work button Toggle */
