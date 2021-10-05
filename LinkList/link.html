@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link List</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="link.css">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <nav>
+
+            <ul>
+                <li><a href="../main.html">Home</a></li>
+                <li><a href="../main.html">All</a>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="name">
+            <span id="Name">Topic Name Link List</span>
+        </div>
+    </div>
+    <button id="toggleBtn">☰</button>
+    <div class="wrapper">
+        <div class="left-side" id="toggleSide">
+            <h2 class="left-h2">Tree</h2>
+            <ul>
+                <li id="sl1"> <a href="#">Link List Basic</a> </li>
+                <li id="sl2"> <a href="#">Link list book</a> </li>
+                <li id="sl3" > <a href="#"">LL problem set 1</a> </li>
+                <li id="sl4"> <a href="#">LL problem set 2</a> </li>
+               
+
+            </ul>
+        </div>
+        <div class="containerMain" id="mainId">
+            <span id="demo" class="pdf mid">Welcome To Mehedi</span>
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("sl1").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="linkPdf/linkBasic.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Link List overview";
+
+        });
+        document.getElementById("sl2").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="linkPdf/linklistbook.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Link List Book";
+
+        });
+        document.getElementById("sl3").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="linkPdf/linklist1.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Link List problem set 1";
+
+        });
+        document.getElementById("sl4").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="linkPdf/linkedlist2.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Link List problem set 2";
+
+        });
+       
+
+
+    </script>
+<script src="../main.js"></script>
+
+</body>
+
+</html>

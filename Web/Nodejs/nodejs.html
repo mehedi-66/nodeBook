@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Js</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="nodejs.css">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <nav>
+               
+            <ul>
+                <li><a href="../../main.html">Home</a></li>
+                <li><a href="../../main.html">All</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <div class="name">
+            <span id ="Name">Topic Name</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="left-side">
+            <h2 class = "left-h2">Node Js</h2>
+            <ul>
+                <li id = "sl1" > <a href="#">Introduction</a> </li>
+                <li id = "sl2" > <a href="#">npm & 3rd party</a> </li>
+              
+            </ul>
+        </div>
+        <div class="containerMain">
+            <span  id = "demo" class = "pdf mid">Welcome To javaScprit</span>
+           
+        </div>
+    </div>
+    <script>
+        document.getElementById("sl1").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="nodePdf/server.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Basic understanding nodeJs";
+
+        });
+        document.getElementById("sl2").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = '  <embed class = "pdf" src="nodePdf/npm.pdf" /> ';
+            document.getElementById("Name").innerHTML = "npm & 3rd party ";
+
+        });
+       
+        </script>
+        
+
+</body>
+
+</html>

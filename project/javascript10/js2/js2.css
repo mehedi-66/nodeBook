@@ -1,0 +1,21 @@
+#btn1{
+    padding: 5px;
+    font-size: 20px;
+    background-color: green;
+    color: black;
+    margin: 100px;
+    border: 2px solid blue;
+}
+
+#container{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+.toast{
+    background-color: green;
+    border-radius: 5px;
+    padding: 2rem;
+    color: black;
+    margin: 1rem;
+}

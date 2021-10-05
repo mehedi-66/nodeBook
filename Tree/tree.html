@@ -26,19 +26,21 @@
             <span id="Name">Topic Name Tree</span>
         </div>
     </div>
-
+    <button id="toggleBtn">☰</button>
     <div class="wrapper">
-        <div class="left-side">
+        <div class="left-side" id="toggleSide">
             <h2 class="left-h2">Tree</h2>
             <ul>
                 <li id="sl1"> <a href="#">Tree Basic</a> </li>
-                <li id="sl2"><a href="#">Tree</a></li>
-                <li id="sl3"><a href="#">Tree</a></li>
-                <li id="sl4"><a href="#">Tree</a></li>
+                <li id="sl2"><a href="#">BST_Tree</a></li>
+                <li id="sl3"><a href="#">AVL_Tree</a></li>
+                <li id="sl4"><a href="#">Search Tree</a></li>
+                <li id="sl5"><a href="#">Red Black Tree</a></li>
+                <li id="sl6"><a href="#"> Binary Heap tree</a></li>
 
             </ul>
         </div>
-        <div class="containerMain">
+        <div class="containerMain" id="mainId">
             <span id="demo" class="pdf mid">Welcome To Mehedi</span>
 
         </div>
@@ -50,22 +52,30 @@
 
         });
         document.getElementById("sl2").addEventListener("click", () => {
-            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="treePDF/1.pdf" /> ';
-            document.getElementById("Name").innerHTML = "B";
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="treePDF/BST_tree.pdf" /> ';
+            document.getElementById("Name").innerHTML = "BST tree";
 
         });
         document.getElementById("sl3").addEventListener("click", () => {
-            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="treePDF/1.pdf" /> ';
-            document.getElementById("Name").innerHTML = "C";
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="treePDF/AVL_tree.pdf" /> ';
+            document.getElementById("Name").innerHTML = "AVL tree or balance height tree";
         });
         document.getElementById("sl4").addEventListener("click", () => {
-            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="treePDF/1.pdf" /> ';
-            document.getElementById("Name").innerHTML = "D";
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="treePDF/search_tree.pdf" /> ';
+            document.getElementById("Name").innerHTML = "search tree and delete tree";
+        });
+        document.getElementById("sl5").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="treePDF/redBlack_tree.pdf" /> ';
+            document.getElementById("Name").innerHTML = "2-3 or Red Black  tree";
+        });
+        document.getElementById("sl6").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="treePDF/Binary_Heap.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Binary Heap";
         });
 
 
     </script>
-
+<script src="../main.js"></script>
 
 </body>
 

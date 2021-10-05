@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursion</title>
+    <title>Graph</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="graph.css">
 </head>
@@ -26,60 +26,30 @@
             <span id ="Name">Topic Name</span>
         </div>
     </div>
-
+    <button id="toggleBtn">☰</button>
     <div class="wrapper">
-        <div class="left-side">
-            <h2 class = "left-h2">Recursion</h2>
+        <div class="left-side" id="toggleSide">
+            <h2 class = "left-h2">Graph</h2>
             <ul>
                 <li id = "sl1" > <a href="#">Graph</a> </li>
-                <li id = "sl2" ><a href="#">Graph</a></li>
-                <li id = "sl3" ><a href="#">Graph</a></li>
-                <li id = "sl4" ><a href="#">Graph</a></li>
-                <li id = "sl5" ><a href="#">Graph</a></li>
-                <li id = "sl6" ><a href="#">Graph</a></li>
-                <li id = "sl7" ><a href="#">Graph</a></li>
+               
             </ul>
         </div>
-        <div class="containerMain">
+        <div class="containerMain" id="mainId">
             <span  id = "demo" class = "pdf mid">Welcome To Mehedi</span>
            
         </div>
     </div>
     <script>
         document.getElementById("sl1").addEventListener("click", ()=>{
-            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/Basic.pdf" /> ' ;
-            document.getElementById("Name").innerHTML = "A";
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="graphPDF/Graph.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Basic Graph";
 
         });
-        document.getElementById("sl2").addEventListener("click", ()=>{
-
-            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/VariableAdd.pdf" /> ' ;
-            document.getElementById("Name").innerHTML = "B";
-
-        });
-        document.getElementById("sl3").addEventListener("click", ()=>{
-            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/staticVariable.pdf" /> ' ;
-            document.getElementById("Name").innerHTML = "C";
-        });
-        document.getElementById("sl4").addEventListener("click", ()=>{
-            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/TreeRecursion.pdf" /> ' ;
-            document.getElementById("Name").innerHTML = "D";
-        });
-        document.getElementById("sl5").addEventListener("click", ()=>{
-            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/Indriect.pdf" /> ' ;
-            document.getElementById("Name").innerHTML = "E";
-        });
-        document.getElementById("sl6").addEventListener("click", ()=>{
-            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/sum.pdf" /> ' ;
-            document.getElementById("Name").innerHTML = "F";
-        });
-        document.getElementById("sl7").addEventListener("click", ()=>{
-            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/factorial.pdf" /> ' ;
-            document.getElementById("Name").innerHTML = "G";
-        });
+       
         </script>
         
-
+        <script src="../main.js"></script>
 </body>
 
 </html>

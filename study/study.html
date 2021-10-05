@@ -21,8 +21,9 @@
             <p id="Name">JUN 2021</p>
         </div>
     </div>
+    <button id="toggleBtn">☰</button>
     <div class="wrapper">
-        <div class="left-side">
+        <div class="left-side" id="toggleSide">
             <h2 class = "left-h2">Make it Onlie</h2>
             <ul>
                 <li id = "sl1" > <a href="#">Graph</a> </li>
@@ -30,7 +31,7 @@
               
             </ul>
         </div>
-        <div class="containerMain">
+        <div class="containerMain" id="mainId">
             <span  id = "demo" class = "pdf mid"></span>
             <div id ="hideGraph" class="graph_size" style="height: 70vh;">
                 <canvas id="lineChart" ></canvas>
@@ -79,5 +80,6 @@
         });
 
     </script>
+    <script src="../main.js"></script>
 </body>
 </html>

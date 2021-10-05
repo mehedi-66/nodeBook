@@ -31,6 +31,7 @@
         <div class="left-side" id="toggleSide" >
             <h2 class = "left-h2">Recursion</h2>
             <ul>
+                <li id = "sl" > <a href="#">Basic overview</a></li>
                 <li id = "sl1" > <a href="#">Basic</a> </li>
                 <li id = "sl2" ><a href="#">Variable Add</a></li>
                 <li id = "sl3" ><a href="#">Static variable</a></li>
@@ -50,6 +51,11 @@
         </div>
     </div>
     <script>
+         document.getElementById("sl").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/Recursion.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Basic overview of Recursion";
+
+        });
         document.getElementById("sl1").addEventListener("click", ()=>{
             document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="RePDF/Basic.pdf" /> ' ;
             document.getElementById("Name").innerHTML = "Head and Tail Recursion";

@@ -26,11 +26,12 @@
             <span id ="Name">Topic Name</span>
         </div>
     </div>
-
+    <button id="toggleBtn">☰</button>
     <div class="wrapper">
-        <div class="left-side">
+        <div class="left-side" id="toggleSide" >
             <h2 class = "left-h2">Git & GitHub</h2>
             <ul>
+                <li id = "sl" > <a href="#">Sheet of git</a> </li>
                 <li id = "sl1" > <a href="#">Introduction</a> </li>
                 <li id = "sl2" > <a href="#">Create Repository</a> </li>
                 <li id = "sl3" > <a href="#">Clone - gitHub</a> </li>
@@ -51,12 +52,17 @@
                 
             </ul>
         </div>
-        <div class="containerMain">
+        <div class="containerMain" id="mainId">
             <span  id = "demo" class = "pdf mid">Welcome To Mehedi</span>
            
         </div>
     </div>
     <script>
+         document.getElementById("sl").addEventListener("click", ()=>{
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="gitPDF/sheet.pdf" /> ' ;
+            document.getElementById("Name").innerHTML = "Basic sheet";
+
+        });
         document.getElementById("sl1").addEventListener("click", ()=>{
             document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="gitPDF/gitBasic.pdf" /> ' ;
             document.getElementById("Name").innerHTML = "Git Basic";
@@ -146,7 +152,7 @@
 
         </script>
         
-
+        <script src="../main.js"></script>
 </body>
 
 </html>

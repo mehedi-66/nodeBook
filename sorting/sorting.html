@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="sorting.css">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <nav>
+
+            <ul>
+                <li><a href="../main.html">Home</a></li>
+                <li><a href="../main.html">All</a>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="name">
+            <span id="Name">Topic Name Tree</span>
+        </div>
+    </div>
+    <button id="toggleBtn">☰</button>
+    <div class="wrapper">
+        <div class="left-side" id="toggleSide">
+            <h2 class="left-h2">Sorting</h2>
+            <ul>
+                <li id="sl1"> <a href="#">Basic Sorting</a> </li>
+
+            </ul>
+        </div>
+        <div class="containerMain" id="mainId">
+            <span id="demo" class="pdf mid">Welcome To Mehedi</span>
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("sl1").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="sortingPDF/sorting.pdf" /> ';
+            document.getElementById("Name").innerHTML = "Basic Sorting Discussion";
+
+        });
+
+    </script>
+<script src="../main.js"></script>
+
+</body>
+
+</html>

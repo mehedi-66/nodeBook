@@ -14,55 +14,55 @@
 
     <div class="nav-bar">
         <nav>
-               
+
             <ul>
                 <li><a href="/main.html">Home</a></li>
                 <li><a href="../main.html">All</a>
                 </li>
             </ul>
-            
+
         </nav>
         <div class="name">
-            <span id ="Name">Topic Name</span>
+            <span id="Name">Topic Name</span>
         </div>
     </div>
-
+    <button id="toggleBtn">☰</button>
     <div class="wrapper">
-        <div class="left-side">
-            <h2 class = "left-h2">Book</h2>
+        <div class="left-side" id="toggleSide">
+            <h2 class="left-h2">Book</h2>
             <ul>
-                <li id = "sl1" > <a href="#">Art of Clear Thinking </a> </li>
-                <li id = "sl2" ><a href="#">Guide line software Eng</a></li>
-                <li id = "sl3" ><a href="#">Book</a></li>
-                
+                <li id="sl1"> <a href="#">Art of Clear Thinking </a> </li>
+                <li id="sl2"><a href="#">Guide line software Eng</a></li>
+                <li id="sl3"><a href="#">Book</a></li>
+
             </ul>
         </div>
-        <div class="containerMain">
-            <span  id = "demo" class = "pdf"></span>
-           
+        <div class="containerMain" id="mainId">
+            <span id="demo" class="pdf mid"></span>
+
         </div>
     </div>
     <script>
-        document.getElementById("sl1").addEventListener("click", ()=>{
-            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="bkPDF/ArtOfThink.pdf" /> ' ;
+        document.getElementById("sl1").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="bkPDF/ArtOfThink.pdf" /> ';
             document.getElementById("Name").innerHTML = "The Art of Clear Thinking";
 
         });
-        document.getElementById("sl2").addEventListener("click", ()=>{
+        document.getElementById("sl2").addEventListener("click", () => {
 
-            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="bkPDF/FullstackDeveloper.pdf" /> ' ;
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="bkPDF/FullstackDeveloper.pdf" /> ';
             document.getElementById("Name").innerHTML = "Guide line software Eng";
 
         });
-        document.getElementById("sl3").addEventListener("click", ()=>{
-            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="bkPDF/DSA-Post.pdf" /> ' ;
+        document.getElementById("sl3").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = ' <embed class = "pdf" src="bkPDF/DSA-Post.pdf" /> ';
             document.getElementById("Name").innerHTML = "C";
         });
-        
-       
-        </script>
-        
 
+
+    </script>
+
+<script src="../main.js"></script>
 </body>
 
 </html>

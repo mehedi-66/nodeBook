@@ -27,9 +27,9 @@
             <span id ="Name">Topic Name</span>
         </div>
     </div>
-
+    <button id="toggleBtn">☰</button>
     <div class="wrapper">
-        <div class="left-side">
+        <div class="left-side" id="toggleSide">
             <h2 class = "left-h2">Linux</h2>
             <ul>
                 <li id = "sl1" > <a href="#">ls cmd</a> </li>
@@ -45,8 +45,16 @@
                 <li id = "sl11" ><a href="#">Linux</a></li>
             </ul>
         </div>
-        <div class="containerMain">
-            <span  id = "demo" class = "pdf mid"> sudo code --user-data-dir="~/.vscode-root" </span>
+        <div class="containerMain" id="mainId">
+            <span  id = "demo" class = "pdf mid"> sudo code --user-data-dir="~/.vscode-root"
+                
+                ADD Environment PATH 
+                1) Open the .bashrc file in your home directory (for example, /home/your-user-name/.bashrc) in a text editor.
+                2) Add export PATH="your-dir:$PATH" to the last line of the file, where your-dir is the directory you want to add.
+                3) Save the .bashrc file.
+                4) Restart your terminal.
+                    
+            </span>
            
         </div>
     </div>
@@ -59,7 +67,7 @@
         
 
         </script>
-        
+        <script src="../main.js"></script>
 
 </body>
 
